@@ -4,7 +4,7 @@
       <div class="search">
         <div class="search__btn">
           <i class="search-icon"></i>
-          <input type="text" placeholder="目的地、住宿名称">
+          <input type="text" placeholder="目的地、住宿名称" class="search__hd__input">
         </div>
         <router-link to="/">
           <button type="button">取消</button>
@@ -17,6 +17,10 @@
       </div>
     </div>
     <router-view class="search__home__container"></router-view>
+    <!-- 进入搜索页面 -->
+    <div class="search__result" @click="changeDisplay">
+
+    </div>
   </div>
 </template>
 
@@ -38,6 +42,12 @@ export default {
         this.$store.dispatch('changeSearchMethods', id)
         return false
       }
+    },
+    changeDisplay () {
+      if (document.querySelector('.search__hd__input').lenght > 0) {
+        var oResult = document.querySelector('.search__result')
+        oResult.style.display = 'block'
+      }
     }
   }
 }
@@ -54,7 +64,7 @@ $bg: #f3f3f3;
     display: inline-block;
     line-height: 1;
     .search-icon {
-      background: url(../../assets/search.png) no-repeat 100%;
+      background: url(../../assets/images/search.png) no-repeat 100%;
       display: inline-block;
       width: .4268rem;
       height: .4268rem;
@@ -80,26 +90,36 @@ $bg: #f3f3f3;
      color: $tur;
      background-color: $bg;
    }
-}
-.search {
-  padding: 0.1667rem 0 0.3333rem 0;
-}
-.search__methods {
-  display: inline-block;
-  padding: 0 0 0 0.5667rem;
-  span {
-    /*text-decoration: underline;*/
-    color: #9e9e9e;
-    display: inline-block;
-    margin-right: 0.7333rem;
-    font-size: 14px;
-    padding: 0 0.2133rem 0.267rem 0.2133rem;
-    // padding-bottom: 0.267rem;
+   .search {
+     padding: 0.1667rem 0 0.3333rem 0;
    }
-   .active {
-    border-bottom: 1px solid $tur;
-    color: #000;
-  }
+   .search__methods {
+     display: inline-block;
+     padding: 0 0 0 0.5667rem;
+     span {
+       /*text-decoration: underline;*/
+       color: #9e9e9e;
+       display: inline-block;
+       margin-right: 0.7333rem;
+       font-size: 14px;
+       padding: 0 0.2133rem 0.267rem 0.2133rem;
+       // padding-bottom: 0.267rem;
+      }
+      .active {
+       border-bottom: 1px solid $tur;
+       color: #000;
+     }
+   }
 }
+.search__result {
+  height: 17rem;
+  width: 100%;
+  margin-top: -16.3664rem;
+  // background-color: blue;
+  z-index: 9999999;
+  color: #fff;
+}
+
+
 
 </style>

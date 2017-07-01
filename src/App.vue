@@ -1,27 +1,26 @@
 <template>
   <div id="app">
     <router-view></router-view>
+    <!-- <f-footer v-on:changeSelect="changeSelect"></f-footer> -->
   </div>
 </template>
 
 <script>
+// import fFooter from '@/components/home/footer.vue'
 export default {
   name: 'app'
+  // components: {
+  //   fFooter
+  // },
+  // methods: {
+  //   changeSelect (value) {
+  //     this.pageIndex = value
+  //     console.log(this.pageIndex)
+  //   }
+  // }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-input,button {
-  border: 0;
-  outline: 0;
-}
-a {
-  text-decoration: none;
-}
-
+@import "assets/style/resets.css"
 </style>

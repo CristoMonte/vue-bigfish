@@ -5,6 +5,7 @@ const state = {
     {
       place: '台湾',
       englishName: 'Taiwan',
+      img: 'http://qn-fishtrip-img01.fishtrip.cn/o_1b98r172ifimk981rno1hbc14bv0.jpeg-fishmedium',
       isActive: true,
       cities: [
       {name: '九份'},
@@ -36,6 +37,7 @@ const state = {
     {
       place: '日本',
       englishName: 'Japan',
+      img: 'http://qn-fishtrip-img01.fishtrip.cn/o_1b98r172ifimk981rno1hbc14bv0.jpeg-fishmedium',
       isActive: false,
       cities: [
         {name: '东京'},
@@ -63,6 +65,7 @@ const state = {
     },
     {
       place: '越南',
+      img: 'http://qn-fishtrip-img01.fishtrip.cn/o_1b98r172ifimk981rno1hbc14bv0.jpeg-fishmedium',
       englishName: 'Vienam',
       isActive: false,
       cities: [
@@ -84,6 +87,7 @@ const state = {
     {
       place: '马来西亚',
       englishName: 'Malaysia',
+      img: 'http://qn-fishtrip-img01.fishtrip.cn/o_1b98r172ifimk981rno1hbc14bv0.jpeg-fishmedium',
       isActive: false,
       cities: [
         {name: '兰卡威'},
@@ -96,6 +100,7 @@ const state = {
     {
       place: '泰国',
       englishName: 'Thailand',
+      img: 'http://qn-fishtrip-img01.fishtrip.cn/o_1b98r172ifimk981rno1hbc14bv0.jpeg-fishmedium',
       isActive: false,
       cities: [
         {name: '丽贝岛'},
@@ -118,6 +123,7 @@ const state = {
     {
       place: '印度尼西亚',
       englishName: 'Indonesia',
+      img: 'http://qn-fishtrip-img01.fishtrip.cn/o_1b98r172ifimk981rno1hbc14bv0.jpeg-fishmedium',
       isActive: false,
       cities: [
         {name: '万隆'},
@@ -137,6 +143,7 @@ const state = {
     {
       place: '韩国',
       englishName: 'Korea',
+      img: 'http://qn-fishtrip-img01.fishtrip.cn/o_1b98r172ifimk981rno1hbc14bv0.jpeg-fishmedium',
       isActive: false,
       cities: [
         {name: '仁川'},
@@ -148,6 +155,7 @@ const state = {
     {
       place: '柬埔寨',
       englishName: 'Cambodia',
+      img: 'http://qn-fishtrip-img01.fishtrip.cn/o_1b98r172ifimk981rno1hbc14bv0.jpeg-fishmedium',
       isActive: false,
       cities: [
         {name: '暹粒'},
@@ -157,6 +165,7 @@ const state = {
     {
       place: '斯里卡兰',
       englishName: 'Srilanka',
+      img: 'http://qn-fishtrip-img01.fishtrip.cn/o_1b98r172ifimk981rno1hbc14bv0.jpeg-fishmedium',
       isActive: false,
       cities: [
         {name: '努沃勒埃利耶'},
@@ -168,6 +177,7 @@ const state = {
     {
       place: '菲律宾',
       englishName: 'Philippines',
+      img: 'http://qn-fishtrip-img01.fishtrip.cn/o_1b98r172ifimk981rno1hbc14bv0.jpeg-fishmedium',
       isActive: false,
       cities: [
         {name: '宿务'},

@@ -1,14 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '../page/Index'
-import SearchHome from '../components/search/SearchHome'
-import Place from '../page/searchMethods/place'
-import History from '../page/searchMethods/history'
-import Near from '../page/searchMethods/near'
-import Plan from '../page/home/plan'
-import Order from '../page/home/order'
-import Mine from '../page/home/mine'
-import Country from '../page/add/country'
 
 Vue.use(Router)
 
@@ -16,46 +7,61 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: Index
-    },
-    {
-      path: '/plan',
-      component: Plan
-    },
-    {
-      path: '/order',
-      component: Order
-    },
-    {
-      path: '/mine',
-      component: Mine
+      component: require('@/page/Index'),
+      redirect: '/found',
+      children: [
+        {
+          path: '/found',
+          component: require('@/page/found/index')
+        },
+        {
+          path: '/plan',
+          component: require('@/page/plan/plan')
+        },
+        {
+          path: '/order',
+          component: require('@/page/order/order')
+        },
+        {
+          path: '/mine',
+          component: require('@/page/mine/mine')
+        }
+      ]
     },
     {
       path: '/search',
-      component: SearchHome,
+      component: require('@/components/public/SearchHome'),
+      redirect: '/place',
       children: [
         {
-          path: '/',
-          component: Place
-        },
-        {
           path: '/place',
-          component: Place
+          component: require('@/components/searchMethods/place')
         },
         {
           path: '/history',
-          component: History
+          component: require('@/components/searchMethods/history')
         },
         {
           path: '/near',
-          component: Near
+          component: require('@/components/searchMethods/near')
         }
       ]
     },
     {
       path: '/add',
-      component: Country
+      component: require('@/components/add/country')
+    },
+    {
+      path: '/detail',
+      component: require('@/components/public/detail')
+    },
+    {
+      path: '/calendar',
+      component: require('@/components/public/calendar')
+    },
+    {
+      path: '/comment',
+      component: require('@/components/public/comment')
     }
-
   ]
 })

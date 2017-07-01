@@ -1,0 +1,120 @@
+.home__container {
+  margin-top: 0.7303rem;
+  height: 12rem;
+  width: 10rem;
+  height: 14.2666rem;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+  .mt-swipe {
+    margin: 0.1751rem;
+    height: 7.0602rem;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.1);
+    .slide {
+      background-size: cover;
+      .hotel__account {
+        width: 2.9103rem;
+        margin-top: 0.5532rem;
+        font-size: 14px;
+        background-color: #ffec50;
+        border-bottom-right-radius: 10px;
+        color: #000;
+        span {
+          position: absolute;
+          right: 0.4351rem;
+          color: #fff;
+        }
+      }
+    }
+    .hotel__price {
+      position: absolute;
+      bottom: 0.4166rem;
+      left: 0.4166rem;
+      color: #fff;
+      .hotel__name {
+        font-size: 18px;
+      }
+      .price {
+        span{
+          &:first-child {
+            font-size: 18px;
+          }
+          &:nth-child(2) {
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+  }
+  .hotel__scroll {
+    margin: 0.1751rem;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.1);
+    img {
+      width: 9.6266rem;
+    }
+    .hotel__description {
+      margin-top: 0.0981rem;
+      margin-left: 0.2685rem;
+      span {
+        color: #000;
+      }
+      .hotel__description__name {
+        font-size: 14px;
+        color: #000;
+      }
+      .starGrade {
+        // line-height: 16px;
+        .star__icon {
+          display: inline-block;
+          width: 2.1805rem;
+          height: 0.3834rem;
+          background: url(../../assets/images/star.png) repeat-x;
+        }
+        span:nth-child(3) {
+          color:#bcbcbc;
+        }
+      }
+      .hotel__scroll__address {
+        .address__icon {
+          display: inline-block;
+          width: 0.3834rem;
+          height: 0.3834rem;
+          background: url(../../assets/images/address.png);
+        }
+      }
+    }
+    .like__btn {
+      height: 0;
+      i {
+       display: block;
+       background: url(../../assets/images/like0.png) no-repeat;
+       width: 1.0406rem;
+       height: 1.0406rem;
+       background-color: transparent;
+       position: relative;
+       top: -2.8648rem;
+       left: 8.0388rem;
+       z-index: 999999;
+     }
+     .liked {
+       background: url(../../assets/images/like1.png) no-repeat;
+     }
+    }
+
+  }
+  .liked__dropup {
+    margin-top: -2162px;
+    text-align: center;
+    display: none;
+    .liked__dropup__btn {
+      padding: 0.3234rem;
+      background-color: rgba(0,0,0,0.7);
+      color: #fff;
+      border-radius: 8px;
+    }
+  }
+}

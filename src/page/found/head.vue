@@ -28,7 +28,7 @@ export default {
     width: 1.1333rem;
     height: 0.933rem;
     margin: 0.5667rem 0.6133rem 0 0.4133rem;
-    background: url(../../assets/logo.png) no-repeat;
+    background: url(../../assets/images/logo.png) no-repeat;
     background-size: contain;
   }
   }
@@ -46,7 +46,7 @@ export default {
     top: -0.5667rem;
     right: 0.000667rem;
     .search-icon {
-      background: url(../../assets/search.png) no-repeat 100%;
+      background: url(../../assets/images/search.png) no-repeat 100%;
       display: inline-block;
       width: .4268rem;
       height: .4268rem;

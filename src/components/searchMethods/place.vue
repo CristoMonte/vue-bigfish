@@ -49,7 +49,6 @@ export default {
   height: 15rem;
   overflow: hidden;
   .places{
-    // position: fixed;
     padding-left: 0.4259rem;
     width: 2.24rem;
     span {
@@ -70,7 +69,7 @@ export default {
   position: absolute;
   left: 3.58rem;
   top: 2.433rem;
-  &:-webkit-scrollbar {
+  &::-webkit-scrollbar {
     width: 0;
   }
   .search__cities {

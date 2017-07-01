@@ -1,23 +1,20 @@
 <template lang="html">
   <div class="app">
-    <f-head></f-head>
-    <f-container></f-container>
-    <f-footer></f-footer>
     <router-view></router-view>
+    <f-footer></f-footer>
   </div>
 </template>
 <script>
-import fHead from '../components/home/head.vue'
-import fContainer from '../components/home/container.vue'
-import fFooter from '../components/home/footer.vue'
+import fFooter from '@/components/public/footer'
 export default {
   components: {
-    fHead,
-    fContainer,
     fFooter
   }
 }
 </script>
 
-<style lang="css">
+<style lang="scss" scoped>
+.app {
+  height: 100%;
+}
 </style>

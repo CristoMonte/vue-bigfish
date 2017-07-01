@@ -1,0 +1,219 @@
+$fishColor: #6ad6e1;
+.detail__wrapper {
+  margin: 0.1751rem;
+  .swiper__hotal__img {
+    .mt-swipe {
+      height: 7.0602rem;
+      position: relative;
+      border-radius: 3px;
+      box-shadow: 0 0 1px 0 rgba(0,0,0,0.1);
+      .slide {
+        background-size: cover;
+      }
+    }
+    span {
+      position: relative;
+      left: 7.6667rem;
+      top: -1.0667rem;
+      color: #fff;
+      background-color: rgba(0,0,0,.8);
+      border-radius: 3px;
+      padding: 0.0266rem 0.1667rem;
+    }
+  }
+  .detail__title {
+    .detail__score {
+      i {
+        display: inline-block;
+        width: 2.1805rem;
+        height: 0.3834rem;
+        display: flex;
+        background: url(../../assets/images/star.png) repeat-x;
+      }
+      p {
+        position: relative;
+        left: 2.4133rem;
+        top: -0.3553rem;
+        color: #f9f9f9;
+      }
+    }
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      position: relative;
+      left:8.9333rem;
+      top: -0.5332rem;
+      border-top: 2px solid $fishColor;
+      border-right: 2px solid $fishColor;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+    h1 {
+      font-size: 18px;
+    }
+    .detail__address {
+      color: #9b9b9b;
+    }
+    span {
+      color: $fishColor;
+      position: relative;
+      left:8.9333rem;
+      top: -0.5332rem;
+    }
+  }
+  .detail__container {
+    .detail__recommand{
+      img {
+        width: 2.133rem;
+        height: 2.133rem;
+        border-radius: 50%;
+      }
+      span {
+        position: relative;
+        top: -1.2343rem;
+        left: 0.3232rem;
+        font-size: 16px;
+      }
+      .detail__recommand__person {
+        color: #9f9f9f;
+        position: relative;
+        top: -1.1343rem;
+        left: 2.5232rem;
+      }
+    }
+    .detail__choose__calendar {
+      border-top: 1px solid rgba(0,0,0,.1);
+      border-bottom: 1px solid rgba(0,0,0,.1);
+      padding: 0.2667rem 0;
+      margin-top: 0.3133rem;
+      .detail__checkin {
+        text-align: center;
+        width: 50%;
+        float: left;
+        p {
+          color: #000;
+          &:nth-child(2) {
+            color: $fishColor;
+            font-size: 16px;
+            &:after {
+              content: '';
+              position: relative;
+              top: -0.3211rem;
+              left: 4.8743rem;
+              display: block;
+              width: 12px;
+              // height: 0px;
+              border-bottom: 1px solid rgba(0,0,0,0.4);
+            }
+          }
+        }
+      }
+      .detail__checkout {
+        text-align: center;
+        p {
+          color: #000;
+          &:nth-child(2) {
+            color: $fishColor;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .detail__nearby__recommand {
+      margin-top: 0.3153rem;
+      display: flex;
+      height: 4.0092rem;
+      position: relative;
+      border-bottom: 1px solid rgba(0,0,0,.2);
+      img {
+        margin-right: 0.3153rem;
+        width: 2.5185rem;
+        height: 2.5185rem;
+        flex: 1;
+      }
+      .detail__nearby__right {
+        width: 100%;
+        p {
+          color: #9f9f9f;
+          &:first-child {
+            color: #000;
+            font-size: 14px;
+          }
+        }
+      }
+      .detail__nearby__desc {
+        position: absolute;
+        top:3.0944rem;
+        display: flex;
+        .detail__nearby__delete,
+        .detail__nearby__food,
+        .detail__nearby__price
+         {
+          display: flex;
+          padding-right: 0.1232rem;
+          i {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+          }
+        }
+        .detail__nearby__food i {
+          background: url('/static/image/food.png') no-repeat;
+        }
+        .detail__nearby__delete i {
+          background: url('/static/image/delete.png') no-repeat;
+        }
+        .detail__nearby__price{
+          i {
+            background: url('/static/image/shandian.png') no-repeat yellow;
+            border-radius: 50%;
+          }
+          .detail__nearby__price__account {
+            color: #9f9f9f;
+          }
+          span {
+            color: red;
+          }
+          .detail__nearby__price__span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .detail__command {
+    margin-top: 0.3214rem;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    .detail__command__title {
+      text-align: center;
+      font-size: 16px;
+      i {
+        display: block;
+        width: 2.1613rem;
+        height:16px;
+        margin-top: 0.332rem;
+        margin-left: 40%;
+        background: url('/static/image/star.png') repeat;
+      }
+    }
+  .user__command__box {
+    margin-top: 0.5564rem;
+    p {
+      padding-bottom: 0.3124rem;
+    }
+    span {
+      padding-right: 0.4121rem;
+      &:nth-child(3) {
+        color: #9f9f9f;
+      }
+    }
+    .command__all {
+      padding-left: 40%;
+      font-size: 16px;
+      color: $fishColor;
+    }
+  }
+  }
+}
